@@ -7,9 +7,9 @@ This repository contains all stages of development for the **Effective Fake News
 ## Repository Structure
 
 - **`notebooks/`**
-  - `01_Data_Comparison.ipynb`: Explores the dataset, comparing fake vs real news using textual features only.
-  - `02_Trial_Model_Without_Link_Analysis.ipynb`: A trial model focused on text analysis without incorporating URLs.
-  - `03_Optimized_Model_With_Link_Analysis.ipynb`: Final model that integrates text and link analysis for improved accuracy.
+  - `Data & Model Comparison.ipynb`: Explores the dataset, comparing fake vs real news using textual features only.
+  - `Trial_Model_Without_Link_Analysis.ipynb`: A trial model focused on text analysis without incorporating URLs.
+  - `Optimized Model With Link Analysis.ipynb`: Final model that integrates text and link analysis for improved accuracy.
 
 - **`data/`**
   - `fake.csv` and `real.csv`: Datasets used in the project.
