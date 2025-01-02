@@ -9,6 +9,7 @@ This repository contains all stages of development for the **Effective Fake News
 - **`notebooks/`**
   - `Data & Model Comparison.ipynb`: Explores the dataset, comparing fake vs real news using textual features only.
   - `Trial_Model_Without_Link_Analysis.ipynb`: A trial model focused on text analysis without incorporating URLs.
+  - `Bert Fake News Initial.ipynb`: Initial implementation of the project using BERT for sequence classification.
   - `Optimized Model With Link Analysis.ipynb`: Final model that integrates text and link analysis for improved accuracy.
 
 - **`data/`**
@@ -36,7 +37,13 @@ This repository contains all stages of development for the **Effective Fake News
   - Develop an initial text-based classification model.
   - Evaluate performance and identify areas for improvement.
 
-### 3. Optimized Model With Link Analysis
+### 3. Trial Model Without Link Analysis
+- **File**: `Bert Fake News Initial.ipynb`
+- **Objective**: 
+  - Implement a BERT-based sequence classification model to predict fake or real news.
+  - Establish a baseline accuracy using only textual data without additional features.
+
+### 4. Optimized Model With Link Analysis
 - **File**: `Optimized Model With Link Analysis.ipynb`
 - **Objective**:
   - Integrate link analysis and textual features.
@@ -60,3 +67,12 @@ The progression from notebooks shows:
    ```bash
    git clone https://github.com/yourusername/Effective-Fake-News-Detection.git
    cd Effective-Fake-News-Detection
+
+2. Install Dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+3. Run Notebooks
+   ```bash
+   jupyter notebook
+
