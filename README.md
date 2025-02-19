@@ -37,7 +37,7 @@ This repository contains all stages of development for the **Effective Fake News
   - Develop an initial text-based classification model.
   - Evaluate performance and identify areas for improvement.
 
-### 3. Trial Model Without Link Analysis
+### 3. BERT-Based Fake News Detection (Initial Model)
 - **File**: `Bert Fake News Initial.ipynb`
 - **Objective**: 
   - Implement a BERT-based sequence classification model to predict fake or real news.
