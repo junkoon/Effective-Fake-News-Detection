@@ -6,49 +6,35 @@ This repository contains all stages of development for the **Effective Fake News
 
 ## Repository Structure
 
-- **`notebooks/`**
-  - `Data & Model Comparison.ipynb`: Explores the dataset, comparing fake vs real news using textual features only.
-  - `Trial_Model_Without_Link_Analysis.ipynb`: A trial model focused on text analysis without incorporating URLs.
-  - `Bert Fake News Initial.ipynb`: Initial implementation of the project using BERT for sequence classification.
-  - `Optimized Model With Link Analysis.ipynb`: Final model that integrates text and link analysis for improved accuracy.
+- **`BERT/`**  
+  Contains code, experiments, and model implementations using BERT for fake news classification.
 
-- **`data/`**
-  - `fake.csv` and `real.csv`: Datasets used in the project.
+- **`RoBERTa/`**  
+  Contains code and experiments with RoBERTa applied to fake news detection.
 
-- **Other Files**:
-  - `requirements.txt`: Contains a list of required Python libraries.
+- **`LSTM/`**  
+  Contains code and experiments with LSTM-based models for classifying fake news.
+
+- **`Comparison across feature set.ipynb`**  
+  A single Jupyter Notebook that uses a Forest Classifier to compare different metadata feature sets (Title-only vs. Title+URL). This notebook investigates if augmenting title features with URL metadata enhances detection accuracy.
+
+- **`data/`**  
+  Contains the datasets used in the project (e.g., `fake.csv` and `real.csv`).
+
+- **Other Files:**  
+  - `requirements.txt`: List of required Python libraries.  
   - `README.md`: Provides an overview of the project.
-
 ---
 
 ## Notebooks
 
-### 1. Data Comparison
-- **File**: `Data & Model Comparison.ipynb`
-- **Objective**: 
-  - Compare basic characteristics of fake and real news.
-  - Evaluate the performance of several fundamental machine learning models
-  - Understand trends and differences in textual features.
-  - Results from this notebook helped decide whether link analysis was worth pursuing.
+### 1. Comparison Across Feature Set
 
-### 2. Trial Model Without Link Analysis
-- **File**: `Trial_Model_Without_Link_Analysis.ipynb`
-- **Objective**: 
-  - Develop an initial text-based classification model.
-  - Evaluate performance and identify areas for improvement.
-
-### 3. BERT-Based Fake News Detection (Initial Model)
-- **File**: `Bert Fake News Initial.ipynb`
-- **Objective**: 
-  - Implement a BERT-based sequence classification model to predict fake or real news.
-  - Establish a baseline accuracy using only textual data without additional features.
-
-### 4. Optimized Model With Link Analysis
-- **File**: `Optimized Model With Link Analysis.ipynb`
-- **Objective**:
-  - Integrate link analysis and textual features.
-  - Use advanced embeddings (BERT) alongside URL feature extraction.
-  - Achieve a higher accuracy with a comprehensive approach.
+- **File:** `Comparison across feature set.ipynb`  
+- **Objective:**  
+  - Benchmark the impact of different feature sets by comparing models that use only the title versus those that integrate both title and URL metadata.  
+  - Evaluate performance using a Forest Classifier as a baseline to understand how metadata affects fake news detection accuracy.  
+  - Provide actionable insights into which combination of features delivers the best results.
 
 ---
 
